@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F7BBDD0C5E12D27D62D7C3B /* Pods_JiaoLuo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3CFA49ECD5EA1B2A59BA2 /* Pods_JiaoLuo.framework */; };
+		98F423CE2110187A00D621E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F423CD2110187A00D621E1 /* AppDelegate.swift */; };
+		98F423D52110187B00D621E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98F423D42110187B00D621E1 /* Assets.xcassets */; };
+		98F423D82110187B00D621E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F423D62110187B00D621E1 /* LaunchScreen.storyboard */; };
+		98F423E32110187C00D621E1 /* JiaoLuoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F423E22110187C00D621E1 /* JiaoLuoTests.swift */; };
+		98F423EE2110187C00D621E1 /* JiaoLuoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F423ED2110187C00D621E1 /* JiaoLuoUITests.swift */; };
+		98F424012110310900D621E1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F423FF2110310900D621E1 /* UIColor+Extension.swift */; };
+		98F424022110310900D621E1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F424002110310900D621E1 /* UIView+Extension.swift */; };
+		98F424072110311700D621E1 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F424042110311600D621E1 /* SwiftNotice.swift */; };
+		98F424082110311700D621E1 /* MLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F424052110311600D621E1 /* MLog.swift */; };
+		98F424092110311700D621E1 /* MController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F424062110311600D621E1 /* MController.swift */; };
+		98F4241C2110313100D621E1 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F4240D2110313100D621E1 /* UserViewController.swift */; };
+		98F4241E2110313100D621E1 /* TabBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F424102110313100D621E1 /* TabBaseViewController.swift */; };
+		98F4241F2110313100D621E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F424112110313100D621E1 /* Main.storyboard */; };
+		98F424212110313100D621E1 /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F424152110313100D621E1 /* FeedsViewController.swift */; };
+		98F424232110313100D621E1 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F424182110313100D621E1 /* AddViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98F423DF2110187C00D621E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F423C22110187A00D621E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98F423C92110187A00D621E1;
+			remoteInfo = JiaoLuo;
+		};
+		98F423EA2110187C00D621E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F423C22110187A00D621E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98F423C92110187A00D621E1;
+			remoteInfo = JiaoLuo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		55A25731AC9E674F062B83B2 /* Pods-JiaoLuo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiaoLuo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JiaoLuo/Pods-JiaoLuo.debug.xcconfig"; sourceTree = "<group>"; };
+		98F423CA2110187A00D621E1 /* JiaoLuo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiaoLuo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98F423CD2110187A00D621E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98F423D42110187B00D621E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98F423D72110187B00D621E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98F423D92110187B00D621E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98F423DE2110187C00D621E1 /* JiaoLuoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiaoLuoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98F423E22110187C00D621E1 /* JiaoLuoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiaoLuoTests.swift; sourceTree = "<group>"; };
+		98F423E42110187C00D621E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98F423E92110187C00D621E1 /* JiaoLuoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiaoLuoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98F423ED2110187C00D621E1 /* JiaoLuoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiaoLuoUITests.swift; sourceTree = "<group>"; };
+		98F423EF2110187C00D621E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98F423FF2110310900D621E1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		98F424002110310900D621E1 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		98F424042110311600D621E1 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
+		98F424052110311600D621E1 /* MLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLog.swift; sourceTree = "<group>"; };
+		98F424062110311600D621E1 /* MController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MController.swift; sourceTree = "<group>"; };
+		98F4240D2110313100D621E1 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		98F424102110313100D621E1 /* TabBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBaseViewController.swift; sourceTree = "<group>"; };
+		98F424122110313100D621E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98F424152110313100D621E1 /* FeedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
+		98F424182110313100D621E1 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		AF8EDFA1751EF1B0737FD0DE /* Pods-JiaoLuo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiaoLuo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JiaoLuo/Pods-JiaoLuo.release.xcconfig"; sourceTree = "<group>"; };
+		D6C3CFA49ECD5EA1B2A59BA2 /* Pods_JiaoLuo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JiaoLuo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98F423C72110187A00D621E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7BBDD0C5E12D27D62D7C3B /* Pods_JiaoLuo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98F423DB2110187C00D621E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98F423E62110187C00D621E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0617D537C0EA23E591AC288F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55A25731AC9E674F062B83B2 /* Pods-JiaoLuo.debug.xcconfig */,
+				AF8EDFA1751EF1B0737FD0DE /* Pods-JiaoLuo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		98F423C12110187A00D621E1 = {
+			isa = PBXGroup;
+			children = (
+				98F423CC2110187A00D621E1 /* JiaoLuo */,
+				98F423E12110187C00D621E1 /* JiaoLuoTests */,
+				98F423EC2110187C00D621E1 /* JiaoLuoUITests */,
+				98F423CB2110187A00D621E1 /* Products */,
+				0617D537C0EA23E591AC288F /* Pods */,
+				B2BEDB17C2D61F4F9725590C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		98F423CB2110187A00D621E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98F423CA2110187A00D621E1 /* JiaoLuo.app */,
+				98F423DE2110187C00D621E1 /* JiaoLuoTests.xctest */,
+				98F423E92110187C00D621E1 /* JiaoLuoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98F423CC2110187A00D621E1 /* JiaoLuo */ = {
+			isa = PBXGroup;
+			children = (
+				98F4240A2110313100D621E1 /* Controllers */,
+				98F423FB21102FCE00D621E1 /* SupportFiles */,
+				98F423D92110187B00D621E1 /* Info.plist */,
+			);
+			path = JiaoLuo;
+			sourceTree = "<group>";
+		};
+		98F423E12110187C00D621E1 /* JiaoLuoTests */ = {
+			isa = PBXGroup;
+			children = (
+				98F423E22110187C00D621E1 /* JiaoLuoTests.swift */,
+				98F423E42110187C00D621E1 /* Info.plist */,
+			);
+			path = JiaoLuoTests;
+			sourceTree = "<group>";
+		};
+		98F423EC2110187C00D621E1 /* JiaoLuoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98F423ED2110187C00D621E1 /* JiaoLuoUITests.swift */,
+				98F423EF2110187C00D621E1 /* Info.plist */,
+			);
+			path = JiaoLuoUITests;
+			sourceTree = "<group>";
+		};
+		98F423FB21102FCE00D621E1 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				98F424032110311600D621E1 /* Utils */,
+				98F423FE2110310900D621E1 /* ViewExtension */,
+				98F423CD2110187A00D621E1 /* AppDelegate.swift */,
+				98F423D42110187B00D621E1 /* Assets.xcassets */,
+				98F423D62110187B00D621E1 /* LaunchScreen.storyboard */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		98F423FE2110310900D621E1 /* ViewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				98F423FF2110310900D621E1 /* UIColor+Extension.swift */,
+				98F424002110310900D621E1 /* UIView+Extension.swift */,
+			);
+			path = ViewExtension;
+			sourceTree = "<group>";
+		};
+		98F424032110311600D621E1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				98F424042110311600D621E1 /* SwiftNotice.swift */,
+				98F424052110311600D621E1 /* MLog.swift */,
+				98F424062110311600D621E1 /* MController.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		98F4240A2110313100D621E1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				98F4240F2110313100D621E1 /* TabBaseVC */,
+				98F4240B2110313100D621E1 /* UserVC */,
+				98F424132110313100D621E1 /* FeedsVC */,
+				98F424172110313100D621E1 /* AddVC */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		98F4240B2110313100D621E1 /* UserVC */ = {
+			isa = PBXGroup;
+			children = (
+				98F4240D2110313100D621E1 /* UserViewController.swift */,
+			);
+			path = UserVC;
+			sourceTree = "<group>";
+		};
+		98F4240F2110313100D621E1 /* TabBaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				98F424102110313100D621E1 /* TabBaseViewController.swift */,
+				98F424112110313100D621E1 /* Main.storyboard */,
+			);
+			path = TabBaseVC;
+			sourceTree = "<group>";
+		};
+		98F424132110313100D621E1 /* FeedsVC */ = {
+			isa = PBXGroup;
+			children = (
+				98F424152110313100D621E1 /* FeedsViewController.swift */,
+			);
+			path = FeedsVC;
+			sourceTree = "<group>";
+		};
+		98F424172110313100D621E1 /* AddVC */ = {
+			isa = PBXGroup;
+			children = (
+				98F424182110313100D621E1 /* AddViewController.swift */,
+			);
+			path = AddVC;
+			sourceTree = "<group>";
+		};
+		B2BEDB17C2D61F4F9725590C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6C3CFA49ECD5EA1B2A59BA2 /* Pods_JiaoLuo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98F423C92110187A00D621E1 /* JiaoLuo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98F423F22110187C00D621E1 /* Build configuration list for PBXNativeTarget "JiaoLuo" */;
+			buildPhases = (
+				CC3767DB176EC82BEFC47EE7 /* [CP] Check Pods Manifest.lock */,
+				98F423C62110187A00D621E1 /* Sources */,
+				98F423C72110187A00D621E1 /* Frameworks */,
+				98F423C82110187A00D621E1 /* Resources */,
+				A039B18C7AEA8F6F72172F18 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JiaoLuo;
+			productName = JiaoLuo;
+			productReference = 98F423CA2110187A00D621E1 /* JiaoLuo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98F423DD2110187C00D621E1 /* JiaoLuoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98F423F52110187C00D621E1 /* Build configuration list for PBXNativeTarget "JiaoLuoTests" */;
+			buildPhases = (
+				98F423DA2110187C00D621E1 /* Sources */,
+				98F423DB2110187C00D621E1 /* Frameworks */,
+				98F423DC2110187C00D621E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98F423E02110187C00D621E1 /* PBXTargetDependency */,
+			);
+			name = JiaoLuoTests;
+			productName = JiaoLuoTests;
+			productReference = 98F423DE2110187C00D621E1 /* JiaoLuoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98F423E82110187C00D621E1 /* JiaoLuoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98F423F82110187C00D621E1 /* Build configuration list for PBXNativeTarget "JiaoLuoUITests" */;
+			buildPhases = (
+				98F423E52110187C00D621E1 /* Sources */,
+				98F423E62110187C00D621E1 /* Frameworks */,
+				98F423E72110187C00D621E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98F423EB2110187C00D621E1 /* PBXTargetDependency */,
+			);
+			name = JiaoLuoUITests;
+			productName = JiaoLuoUITests;
+			productReference = 98F423E92110187C00D621E1 /* JiaoLuoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98F423C22110187A00D621E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = brooks;
+				TargetAttributes = {
+					98F423C92110187A00D621E1 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					98F423DD2110187C00D621E1 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 98F423C92110187A00D621E1;
+					};
+					98F423E82110187C00D621E1 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 98F423C92110187A00D621E1;
+					};
+				};
+			};
+			buildConfigurationList = 98F423C52110187A00D621E1 /* Build configuration list for PBXProject "JiaoLuo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98F423C12110187A00D621E1;
+			productRefGroup = 98F423CB2110187A00D621E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98F423C92110187A00D621E1 /* JiaoLuo */,
+				98F423DD2110187C00D621E1 /* JiaoLuoTests */,
+				98F423E82110187C00D621E1 /* JiaoLuoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98F423C82110187A00D621E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98F4241F2110313100D621E1 /* Main.storyboard in Resources */,
+				98F423D82110187B00D621E1 /* LaunchScreen.storyboard in Resources */,
+				98F423D52110187B00D621E1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98F423DC2110187C00D621E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98F423E72110187C00D621E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A039B18C7AEA8F6F72172F18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JiaoLuo/Pods-JiaoLuo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JiaoLuo/Pods-JiaoLuo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC3767DB176EC82BEFC47EE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JiaoLuo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98F423C62110187A00D621E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98F424232110313100D621E1 /* AddViewController.swift in Sources */,
+				98F4241C2110313100D621E1 /* UserViewController.swift in Sources */,
+				98F424012110310900D621E1 /* UIColor+Extension.swift in Sources */,
+				98F424022110310900D621E1 /* UIView+Extension.swift in Sources */,
+				98F424092110311700D621E1 /* MController.swift in Sources */,
+				98F424072110311700D621E1 /* SwiftNotice.swift in Sources */,
+				98F424082110311700D621E1 /* MLog.swift in Sources */,
+				98F424212110313100D621E1 /* FeedsViewController.swift in Sources */,
+				98F423CE2110187A00D621E1 /* AppDelegate.swift in Sources */,
+				98F4241E2110313100D621E1 /* TabBaseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98F423DA2110187C00D621E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98F423E32110187C00D621E1 /* JiaoLuoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98F423E52110187C00D621E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98F423EE2110187C00D621E1 /* JiaoLuoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98F423E02110187C00D621E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98F423C92110187A00D621E1 /* JiaoLuo */;
+			targetProxy = 98F423DF2110187C00D621E1 /* PBXContainerItemProxy */;
+		};
+		98F423EB2110187C00D621E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98F423C92110187A00D621E1 /* JiaoLuo */;
+			targetProxy = 98F423EA2110187C00D621E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98F423D62110187B00D621E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98F423D72110187B00D621E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		98F424112110313100D621E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98F424122110313100D621E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98F423F02110187C00D621E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98F423F12110187C00D621E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98F423F32110187C00D621E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55A25731AC9E674F062B83B2 /* Pods-JiaoLuo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJ343D46JX;
+				INFOPLIST_FILE = JiaoLuo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-D MLog";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brooks.JiaoLuo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98F423F42110187C00D621E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF8EDFA1751EF1B0737FD0DE /* Pods-JiaoLuo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJ343D46JX;
+				INFOPLIST_FILE = JiaoLuo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brooks.JiaoLuo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98F423F62110187C00D621E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJ343D46JX;
+				INFOPLIST_FILE = JiaoLuoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brooks.JiaoLuoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JiaoLuo.app/JiaoLuo";
+			};
+			name = Debug;
+		};
+		98F423F72110187C00D621E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJ343D46JX;
+				INFOPLIST_FILE = JiaoLuoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brooks.JiaoLuoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JiaoLuo.app/JiaoLuo";
+			};
+			name = Release;
+		};
+		98F423F92110187C00D621E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJ343D46JX;
+				INFOPLIST_FILE = JiaoLuoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brooks.JiaoLuoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JiaoLuo;
+			};
+			name = Debug;
+		};
+		98F423FA2110187C00D621E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJ343D46JX;
+				INFOPLIST_FILE = JiaoLuoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brooks.JiaoLuoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JiaoLuo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98F423C52110187A00D621E1 /* Build configuration list for PBXProject "JiaoLuo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98F423F02110187C00D621E1 /* Debug */,
+				98F423F12110187C00D621E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98F423F22110187C00D621E1 /* Build configuration list for PBXNativeTarget "JiaoLuo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98F423F32110187C00D621E1 /* Debug */,
+				98F423F42110187C00D621E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98F423F52110187C00D621E1 /* Build configuration list for PBXNativeTarget "JiaoLuoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98F423F62110187C00D621E1 /* Debug */,
+				98F423F72110187C00D621E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98F423F82110187C00D621E1 /* Build configuration list for PBXNativeTarget "JiaoLuoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98F423F92110187C00D621E1 /* Debug */,
+				98F423FA2110187C00D621E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98F423C22110187A00D621E1 /* Project object */;
+}

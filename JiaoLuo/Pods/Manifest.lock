@@ -1,0 +1,29 @@
+PODS:
+  - KeychainAccess (3.1.0)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - KeychainAccess
+  - RxCocoa
+  - RxSwift
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KeychainAccess
+    - RxCocoa
+    - RxSwift
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 22d0c1d02c49b73dd438ff9137ec08a9da12bda4
+
+COCOAPODS: 1.5.3
