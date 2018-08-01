@@ -1,0 +1,6 @@
+framework module EDHInputAccessoryView {
+  umbrella header "EDHInputAccessoryView-umbrella.h"
+
+  export *
+  module * { export * }
+}

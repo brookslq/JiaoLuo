@@ -7,6 +7,7 @@ pod 'KeychainAccess'
 pod 'SwiftyJSON'
 pod 'RxSwift'
 pod 'RxCocoa'
-pod 'TZImagePickerController'
+pod 'CLImagePickerTool'
+pod 'EDHInputAccessoryView'
 inhibit_all_warnings!
 end

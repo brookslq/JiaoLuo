@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CLImagePickerTool
 
 class AddViewController: UIViewController {
     
@@ -28,6 +29,8 @@ class AddViewController: UIViewController {
     //MARK: - ButtonClickEvent
     @IBAction func textButtonClickEvent(_ sender: UIButton) {
         mLog(message: "文字输入")
+        let richTextVC = RichTextInputViewController()
+        self.navigationController?.pushViewController(richTextVC, animated: true)
     }
     @IBAction func voiceButtonClickEvent(_ sender: UIButton) {
         mLog(message: "声音输入")
@@ -35,7 +38,13 @@ class AddViewController: UIViewController {
     }
     @IBAction func photoButtonClickEvent(_ sender: UIButton) {
         mLog(message: "照片")
-        
+        let imagePicker = CLImagePickersTool()
+        imagePicker.singleImageChooseType = .singlePicture
+        imagePicker.isHiddenVideo = true
+        imagePicker.singleModelImageCanEditor = true
+        imagePicker.setupImagePickerWith(MaxImagesCount: 6, superVC: self) { (asset,cutImage) in
+            
+        }
     }
     
     @IBAction func dismissClickEvent(_ sender: UIButton) {
@@ -48,3 +57,4 @@ class AddViewController: UIViewController {
         self.tabBarController?.selectedIndex = 0
     }
 }
+

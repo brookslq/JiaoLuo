@@ -1,0 +1,6 @@
+framework module EDHUtility {
+  umbrella header "EDHUtility-umbrella.h"
+
+  export *
+  module * { export * }
+}

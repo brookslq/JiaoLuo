@@ -29,7 +29,6 @@
                                 <state key="highlighted" image="add_text_sel"/>
                                 <connections>
                                     <action selector="textButtonClickEvent:" destination="HZe-bN-x4N" eventType="touchUpInside" id="Tte-Q6-1gb"/>
-                                    <segue destination="2Le-Wl-vWT" kind="push" id="bFl-4e-cpA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ou-HX-2sh">

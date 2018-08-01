@@ -1,33 +1,65 @@
 PODS:
+  - CLImagePickerTool (2.1.4)
+  - EDHInputAccessoryView (0.1.1):
+    - EDHUtility (~> 0.1)
+    - FontAwesomeKit (~> 2.1)
+  - EDHUtility (0.1.2)
+  - FontAwesomeKit (2.2.1):
+    - FontAwesomeKit/Core (= 2.2.1)
+    - FontAwesomeKit/FontAwesome (= 2.2.1)
+    - FontAwesomeKit/FoundationIcons (= 2.2.1)
+    - FontAwesomeKit/IonIcons (= 2.2.1)
+    - FontAwesomeKit/Material (= 2.2.1)
+    - FontAwesomeKit/Octicons (= 2.2.1)
+    - FontAwesomeKit/Zocial (= 2.2.1)
+  - FontAwesomeKit/Core (2.2.1)
+  - FontAwesomeKit/FontAwesome (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/FoundationIcons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/IonIcons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Material (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Octicons (2.2.1):
+    - FontAwesomeKit/Core
+  - FontAwesomeKit/Zocial (2.2.1):
+    - FontAwesomeKit/Core
   - KeychainAccess (3.1.0)
   - RxCocoa (4.0.0):
     - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
   - SwiftyJSON (3.1.4)
-  - TZImagePickerController (1.9.3)
 
 DEPENDENCIES:
+  - CLImagePickerTool
+  - EDHInputAccessoryView
   - KeychainAccess
   - RxCocoa
   - RxSwift
   - SwiftyJSON
-  - TZImagePickerController
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - CLImagePickerTool
+    - EDHInputAccessoryView
+    - EDHUtility
+    - FontAwesomeKit
     - KeychainAccess
     - RxCocoa
     - RxSwift
     - SwiftyJSON
-    - TZImagePickerController
 
 SPEC CHECKSUMS:
+  CLImagePickerTool: d8152a6bf7c780e6c558c3db52e5577acdefec0e
+  EDHInputAccessoryView: 3e15385630d6dabb335c52981ffde957d192c8d0
+  EDHUtility: 9e888c6880f52318e6f018374adb3d15c749f4a5
+  FontAwesomeKit: 3614979b3dbb0ec3f7fac1bd760b91f66c31db67
   KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
-  TZImagePickerController: 079ab986018c22793462e531045a75e366b18252
 
-PODFILE CHECKSUM: 9171ac79fde6f9d51af41cdeea401409237024b4
+PODFILE CHECKSUM: 4c58b95dd853dd33d0d5e5af261eff450a09c04d
 
 COCOAPODS: 1.5.3
