@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F7BBDD0C5E12D27D62D7C3B /* Pods_JiaoLuo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3CFA49ECD5EA1B2A59BA2 /* Pods_JiaoLuo.framework */; };
+		98C89F0421114ABE00F7CDC4 /* RichTextInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C89F0321114ABE00F7CDC4 /* RichTextInputViewController.swift */; };
 		98F423CE2110187A00D621E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F423CD2110187A00D621E1 /* AppDelegate.swift */; };
 		98F423D52110187B00D621E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98F423D42110187B00D621E1 /* Assets.xcassets */; };
 		98F423D82110187B00D621E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F423D62110187B00D621E1 /* LaunchScreen.storyboard */; };
@@ -23,6 +24,9 @@
 		98F4241F2110313100D621E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F424112110313100D621E1 /* Main.storyboard */; };
 		98F424212110313100D621E1 /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F424152110313100D621E1 /* FeedsViewController.swift */; };
 		98F424232110313100D621E1 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F424182110313100D621E1 /* AddViewController.swift */; };
+		98F424272110419100D621E1 /* Feeds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F424262110419100D621E1 /* Feeds.storyboard */; };
+		98F42429211041A900D621E1 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F42428211041A900D621E1 /* User.storyboard */; };
+		98F4242B211041B900D621E1 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F4242A211041B900D621E1 /* Add.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		55A25731AC9E674F062B83B2 /* Pods-JiaoLuo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiaoLuo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JiaoLuo/Pods-JiaoLuo.debug.xcconfig"; sourceTree = "<group>"; };
+		98C89F0321114ABE00F7CDC4 /* RichTextInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextInputViewController.swift; sourceTree = "<group>"; };
 		98F423CA2110187A00D621E1 /* JiaoLuo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiaoLuo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F423CD2110187A00D621E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98F423D42110187B00D621E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +70,9 @@
 		98F424122110313100D621E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98F424152110313100D621E1 /* FeedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
 		98F424182110313100D621E1 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		98F424262110419100D621E1 /* Feeds.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feeds.storyboard; sourceTree = "<group>"; };
+		98F42428211041A900D621E1 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		98F4242A211041B900D621E1 /* Add.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
 		AF8EDFA1751EF1B0737FD0DE /* Pods-JiaoLuo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiaoLuo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JiaoLuo/Pods-JiaoLuo.release.xcconfig"; sourceTree = "<group>"; };
 		D6C3CFA49ECD5EA1B2A59BA2 /* Pods_JiaoLuo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JiaoLuo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -199,6 +207,7 @@
 		98F4240B2110313100D621E1 /* UserVC */ = {
 			isa = PBXGroup;
 			children = (
+				98F42428211041A900D621E1 /* User.storyboard */,
 				98F4240D2110313100D621E1 /* UserViewController.swift */,
 			);
 			path = UserVC;
@@ -216,6 +225,7 @@
 		98F424132110313100D621E1 /* FeedsVC */ = {
 			isa = PBXGroup;
 			children = (
+				98F424262110419100D621E1 /* Feeds.storyboard */,
 				98F424152110313100D621E1 /* FeedsViewController.swift */,
 			);
 			path = FeedsVC;
@@ -224,7 +234,9 @@
 		98F424172110313100D621E1 /* AddVC */ = {
 			isa = PBXGroup;
 			children = (
+				98F4242A211041B900D621E1 /* Add.storyboard */,
 				98F424182110313100D621E1 /* AddViewController.swift */,
+				98C89F0321114ABE00F7CDC4 /* RichTextInputViewController.swift */,
 			);
 			path = AddVC;
 			sourceTree = "<group>";
@@ -344,7 +356,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				98F4241F2110313100D621E1 /* Main.storyboard in Resources */,
+				98F42429211041A900D621E1 /* User.storyboard in Resources */,
 				98F423D82110187B00D621E1 /* LaunchScreen.storyboard in Resources */,
+				98F424272110419100D621E1 /* Feeds.storyboard in Resources */,
+				98F4242B211041B900D621E1 /* Add.storyboard in Resources */,
 				98F423D52110187B00D621E1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +392,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -384,6 +400,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -419,6 +436,7 @@
 				98F4241C2110313100D621E1 /* UserViewController.swift in Sources */,
 				98F424012110310900D621E1 /* UIColor+Extension.swift in Sources */,
 				98F424022110310900D621E1 /* UIView+Extension.swift in Sources */,
+				98C89F0421114ABE00F7CDC4 /* RichTextInputViewController.swift in Sources */,
 				98F424092110311700D621E1 /* MController.swift in Sources */,
 				98F424072110311700D621E1 /* SwiftNotice.swift in Sources */,
 				98F424082110311700D621E1 /* MLog.swift in Sources */,
@@ -606,7 +624,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				"OTHER_SWIFT_FLAGS[arch=*]" = "-D MLog";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-D MLOG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brooks.JiaoLuo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

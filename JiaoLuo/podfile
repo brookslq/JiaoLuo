@@ -7,5 +7,6 @@ pod 'KeychainAccess'
 pod 'SwiftyJSON'
 pod 'RxSwift'
 pod 'RxCocoa'
+pod 'TZImagePickerController'
 inhibit_all_warnings!
 end

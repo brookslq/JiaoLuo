@@ -9,27 +9,42 @@
 import UIKit
 
 class AddViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewWillAppear(_ animated: Bool) {
+        initConfig()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
-    */
-
+    
+    func initConfig() {
+        //移除底部tabbar
+        self.tabBarController?.hidesBottomBarWhenPushed = true
+        self.tabBarController?.tabBar.isHidden = true
+        self.automaticallyAdjustsScrollViewInsets = false
+    }
+   
+    //MARK: - ButtonClickEvent
+    @IBAction func textButtonClickEvent(_ sender: UIButton) {
+        mLog(message: "文字输入")
+    }
+    @IBAction func voiceButtonClickEvent(_ sender: UIButton) {
+        mLog(message: "声音输入")
+        
+    }
+    @IBAction func photoButtonClickEvent(_ sender: UIButton) {
+        mLog(message: "照片")
+        
+    }
+    
+    @IBAction func dismissClickEvent(_ sender: UIButton) {
+        mLog(message: "消失")
+        // TabBar相关属性恢复
+        self.tabBarController?.hidesBottomBarWhenPushed = false
+        self.tabBarController?.tabBar.isHidden = false
+        self.automaticallyAdjustsScrollViewInsets = true
+        // 默认回Feeds
+        self.tabBarController?.selectedIndex = 0
+    }
 }

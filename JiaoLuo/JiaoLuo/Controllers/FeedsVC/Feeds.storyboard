@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T0y-VL-7Ed">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--角落-->
+        <scene sceneID="wlO-US-B8Z">
+            <objects>
+                <viewController id="Dlg-3r-9Lx" customClass="FeedsViewController" customModule="JiaoLuo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pQG-30-gYm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uCH-nj-Zoh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="角落" id="uyI-Ra-din"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uD-TZ-yeh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1784.8" y="-20.239880059970016"/>
+        </scene>
+        <!--角落-->
+        <scene sceneID="Eav-NW-AFb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T0y-VL-7Ed" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="角落" image="tab_feeds_sel" selectedImage="tab_feeds_sel" id="InC-dd-gUt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XGF-pO-VjH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dlg-3r-9Lx" kind="relationship" relationship="rootViewController" id="Sfm-XD-3rP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BYX-K3-qqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="673" y="-20"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_feeds_sel" width="32" height="32"/>
+    </resources>
+</document>
