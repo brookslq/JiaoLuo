@@ -9,10 +9,12 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import CoreLocation
 
 class FeedsViewController: UIViewController {
     
     // 标签栏变量
+    @IBOutlet weak var labelBgScrollView: UIScrollView!
     let titles = ["全部", "文字", "声音", "照片", "视频", "打卡", "Todo"]
     var titleButtons: [UIButton] = []
     var titleLine: UIView!
@@ -28,6 +30,7 @@ class FeedsViewController: UIViewController {
     
     func initConfig() {
         setupLabelsUI()
+        DataProcesser().setLocation(self)
     }
     
     // MARK: - UI设置
@@ -36,8 +39,7 @@ class FeedsViewController: UIViewController {
         let titleWidth = view.width / 7
         var titleX = 0
         for i in titles.indices {
-            mLog(message: "indices: " + i.description)
-            let titleButton = UIButton(frame: CGRect(x: titleX, y: 72, width: Int(titleWidth), height: 22))
+            let titleButton = UIButton(frame: CGRect(x: titleX, y: 2, width: Int(titleWidth), height: 22))
             titleX = Int(titleWidth * CGFloat(i + 1))
             titleButton.setTitle(titles[i], for: .normal)
             titleButton.tag = i
@@ -46,7 +48,7 @@ class FeedsViewController: UIViewController {
             titleButton.setTitleColor(UIColor.ColorHex(hex: "888888"), for: .normal)
             titleButton.setTitleColor(UIColor.black, for: .selected)
             titleButtons.append(titleButton)
-            view.addSubview(titleButton)
+            labelBgScrollView.addSubview(titleButton)
             
             // 添加 Rx 方法
             titleButton.rx.tap
@@ -74,10 +76,26 @@ class FeedsViewController: UIViewController {
         titleButtons.first?.titleLabel?.font = UIFont.systemFont(ofSize: 20)
         
         // 设置标签下划线
-        titleLine = UIView(frame: CGRect(x: 0, y: (titleButtons.first?.bottom)! + 6, width: titleWidth - 10, height: 1))
+        titleLine = UIView(frame: CGRect(x: 0, y: (titleButtons.first?.bottom)! + 4, width: titleWidth - 10, height: 1))
         titleLine.backgroundColor = UIColor.black
         titleLine.center.x = (titleButtons.first?.center.x)!
-        view.addSubview(titleLine)
+        labelBgScrollView.addSubview(titleLine)
     }
 
 }
+
+
+
+
+extension FeedsViewController: CLLocationManagerDelegate {
+    //定位改变执行，可以得到新位置、旧位置
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        //获取最新的坐标
+        let currLocation:CLLocation = locations.last!
+        ConfigInfo.LONGITUDE = currLocation.coordinate.longitude.description
+        ConfigInfo.LAITUDE = currLocation.coordinate.latitude.description
+        mLog(message: "经度：\(currLocation.coordinate.longitude)")
+        mLog(message: "纬度：\(currLocation.coordinate.latitude)")
+    }
+}
+

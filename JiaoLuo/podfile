@@ -9,5 +9,9 @@ pod 'RxSwift'
 pod 'RxCocoa'
 pod 'CLImagePickerTool'
 pod 'EDHInputAccessoryView'
+pod 'Alamofire'
+pod 'Moya', '~> 10'
+pod 'PKHUD'
+pod 'FMDB'
 inhibit_all_warnings!
 end

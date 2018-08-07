@@ -17,10 +17,26 @@
                     <view key="view" contentMode="scaleToFill" id="pQG-30-gYm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pnv-kU-oSv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MeP-g7-9Yj"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Pnv-kU-oSv" firstAttribute="top" secondItem="uCH-nj-Zoh" secondAttribute="top" id="QTQ-cQ-wex"/>
+                            <constraint firstItem="Pnv-kU-oSv" firstAttribute="leading" secondItem="uCH-nj-Zoh" secondAttribute="leading" id="lRv-Nu-3YF"/>
+                            <constraint firstItem="Pnv-kU-oSv" firstAttribute="trailing" secondItem="uCH-nj-Zoh" secondAttribute="trailing" id="t6x-Cp-jf5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uCH-nj-Zoh"/>
                     </view>
                     <navigationItem key="navigationItem" title="角落" id="uyI-Ra-din"/>
+                    <connections>
+                        <outlet property="labelBgScrollView" destination="Pnv-kU-oSv" id="mnq-hj-g5W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7uD-TZ-yeh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,7 +59,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BYX-K3-qqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="673" y="-20"/>
+            <point key="canvasLocation" x="1022" y="-54"/>
         </scene>
     </scenes>
     <resources>

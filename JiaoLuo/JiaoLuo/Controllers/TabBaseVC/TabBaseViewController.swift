@@ -24,3 +24,10 @@ class TabBaseViewController: UITabBarController {
     
 }
 
+// MARK: - Tabbar相关方法
+func resetTabbarSelected(_ target: UIViewController) {
+    target.tabBarController?.hidesBottomBarWhenPushed = false
+    target.tabBarController?.tabBar.isHidden = false
+    target.automaticallyAdjustsScrollViewInsets = true
+    target.tabBarController?.selectedIndex = 0
+}

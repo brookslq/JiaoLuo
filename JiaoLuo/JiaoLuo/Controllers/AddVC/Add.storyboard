@@ -29,6 +29,7 @@
                                 <state key="highlighted" image="add_text_sel"/>
                                 <connections>
                                     <action selector="textButtonClickEvent:" destination="HZe-bN-x4N" eventType="touchUpInside" id="Tte-Q6-1gb"/>
+                                    <segue destination="vyl-3H-4NA" kind="push" identifier="turn2Text" id="tiW-oO-nRx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ou-HX-2sh">
@@ -148,21 +149,89 @@
             </objects>
             <point key="canvasLocation" x="432.80000000000001" y="1006.1469265367317"/>
         </scene>
-        <!--文记-->
-        <scene sceneID="FMu-BL-ge3">
+        <!--Rich Text Input View Controller-->
+        <scene sceneID="uQS-PD-20F">
             <objects>
-                <viewController id="2Le-Wl-vWT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Dka-zv-CTS">
+                <viewController id="vyl-3H-4NA" customClass="RichTextInputViewController" customModule="JiaoLuo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jkI-yb-1pn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-8-2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZh-px-2eT">
+                                <rect key="frame" x="16" y="82" width="70" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Nsj-x6-TGd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="晴·迷城" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cw3-Pf-r7N">
+                                <rect key="frame" x="302" y="82" width="54" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="rag-Sh-R5O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="opr-Ug-U5o">
+                                <rect key="frame" x="16" y="111" width="343" height="498"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="嗨，这算是一个彩蛋吧。正常情况，应该是看不到这段文字，想见就是有缘，祝你幸福快乐！">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name=".PingFangSC-Regular"/>
+                                            <font key="NSOriginalFont" size="18" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="charWrapping" baseWritingDirection="natural" firstLineHeadIndent="36" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGV-vC-Pbk">
+                                <rect key="frame" x="164" y="617" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="40C-ZG-NCP"/>
+                                    <constraint firstAttribute="height" constant="30" id="KvX-es-kxi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="存">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonClick:" destination="vyl-3H-4NA" eventType="touchUpInside" id="JFn-TJ-epw"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="JcX-u7-Hlb"/>
+                        <constraints>
+                            <constraint firstItem="opr-Ug-U5o" firstAttribute="top" secondItem="mZh-px-2eT" secondAttribute="bottom" constant="9" id="1qq-8M-p63"/>
+                            <constraint firstItem="mZh-px-2eT" firstAttribute="leading" secondItem="8Kz-Zt-94a" secondAttribute="leading" constant="16" id="5HY-5V-LRN"/>
+                            <constraint firstItem="opr-Ug-U5o" firstAttribute="leading" secondItem="8Kz-Zt-94a" secondAttribute="leading" constant="16" id="8GE-Yf-jcc"/>
+                            <constraint firstItem="8Kz-Zt-94a" firstAttribute="trailing" secondItem="opr-Ug-U5o" secondAttribute="trailing" constant="16" id="COg-ee-6Od"/>
+                            <constraint firstItem="8Kz-Zt-94a" firstAttribute="bottom" secondItem="tGV-vC-Pbk" secondAttribute="bottom" constant="20" id="YyN-Nz-NYH"/>
+                            <constraint firstItem="Cw3-Pf-r7N" firstAttribute="top" secondItem="8Kz-Zt-94a" secondAttribute="top" constant="18" id="ZwF-xg-Jbj"/>
+                            <constraint firstItem="tGV-vC-Pbk" firstAttribute="centerX" secondItem="8Kz-Zt-94a" secondAttribute="centerX" id="hpF-cv-os5"/>
+                            <constraint firstItem="8Kz-Zt-94a" firstAttribute="trailing" secondItem="Cw3-Pf-r7N" secondAttribute="trailing" constant="19" id="hpT-rz-doV"/>
+                            <constraint firstItem="mZh-px-2eT" firstAttribute="top" secondItem="8Kz-Zt-94a" secondAttribute="top" constant="18" id="qkq-DC-cUy"/>
+                            <constraint firstItem="tGV-vC-Pbk" firstAttribute="top" secondItem="opr-Ug-U5o" secondAttribute="bottom" priority="250" constant="8" id="vzR-WN-4t4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Kz-Zt-94a"/>
                     </view>
-                    <navigationItem key="navigationItem" title="文记" id="xv4-LW-yJh"/>
+                    <navigationItem key="navigationItem" id="1sI-IA-EzN"/>
+                    <connections>
+                        <outlet property="contentTextView" destination="opr-Ug-U5o" id="OSd-Va-IIX"/>
+                        <outlet property="contentViewBottomConstrain" destination="vzR-WN-4t4" id="rmG-KR-S2t"/>
+                        <outlet property="descriptionInfoLabel" destination="Cw3-Pf-r7N" id="yhw-Wh-OsZ"/>
+                        <outlet property="saveButton" destination="tGV-vC-Pbk" id="xjF-Qw-d4C"/>
+                        <outlet property="timeLabel" destination="mZh-px-2eT" id="77J-DO-Isa"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zzk-Ij-UJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w3Y-bs-pNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1400.8" y="1005.2473763118442"/>
+            <point key="canvasLocation" x="1548" y="1005.2473763118442"/>
         </scene>
         <!--记录-->
         <scene sceneID="a7k-rj-SKM">

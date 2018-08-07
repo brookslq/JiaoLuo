@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1F7BBDD0C5E12D27D62D7C3B /* Pods_JiaoLuo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3CFA49ECD5EA1B2A59BA2 /* Pods_JiaoLuo.framework */; };
+		986FA26D2112FBFC00C623BC /* ConfigInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FA26C2112FBFC00C623BC /* ConfigInfo.swift */; };
+		986FA26F2112FDE500C623BC /* DataProcesser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FA26E2112FDE500C623BC /* DataProcesser.swift */; };
+		986FA2712113004F00C623BC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FA2702113004F00C623BC /* API.swift */; };
+		986FA274211301F700C623BC /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FA273211301F700C623BC /* Models.swift */; };
+		986FA2762113056E00C623BC /* LimitProcesser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FA2752113056E00C623BC /* LimitProcesser.swift */; };
 		98C89F0421114ABE00F7CDC4 /* RichTextInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C89F0321114ABE00F7CDC4 /* RichTextInputViewController.swift */; };
 		98F423CE2110187A00D621E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F423CD2110187A00D621E1 /* AppDelegate.swift */; };
 		98F423D52110187B00D621E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98F423D42110187B00D621E1 /* Assets.xcassets */; };
@@ -18,7 +23,6 @@
 		98F424022110310900D621E1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F424002110310900D621E1 /* UIView+Extension.swift */; };
 		98F424072110311700D621E1 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F424042110311600D621E1 /* SwiftNotice.swift */; };
 		98F424082110311700D621E1 /* MLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F424052110311600D621E1 /* MLog.swift */; };
-		98F424092110311700D621E1 /* MController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F424062110311600D621E1 /* MController.swift */; };
 		98F4241C2110313100D621E1 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F4240D2110313100D621E1 /* UserViewController.swift */; };
 		98F4241E2110313100D621E1 /* TabBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F424102110313100D621E1 /* TabBaseViewController.swift */; };
 		98F4241F2110313100D621E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F424112110313100D621E1 /* Main.storyboard */; };
@@ -48,6 +52,11 @@
 
 /* Begin PBXFileReference section */
 		55A25731AC9E674F062B83B2 /* Pods-JiaoLuo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiaoLuo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JiaoLuo/Pods-JiaoLuo.debug.xcconfig"; sourceTree = "<group>"; };
+		986FA26C2112FBFC00C623BC /* ConfigInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigInfo.swift; sourceTree = "<group>"; };
+		986FA26E2112FDE500C623BC /* DataProcesser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProcesser.swift; sourceTree = "<group>"; };
+		986FA2702113004F00C623BC /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		986FA273211301F700C623BC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		986FA2752113056E00C623BC /* LimitProcesser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitProcesser.swift; sourceTree = "<group>"; };
 		98C89F0321114ABE00F7CDC4 /* RichTextInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextInputViewController.swift; sourceTree = "<group>"; };
 		98F423CA2110187A00D621E1 /* JiaoLuo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiaoLuo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F423CD2110187A00D621E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +73,6 @@
 		98F424002110310900D621E1 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		98F424042110311600D621E1 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
 		98F424052110311600D621E1 /* MLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLog.swift; sourceTree = "<group>"; };
-		98F424062110311600D621E1 /* MController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MController.swift; sourceTree = "<group>"; };
 		98F4240D2110313100D621E1 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		98F424102110313100D621E1 /* TabBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBaseViewController.swift; sourceTree = "<group>"; };
 		98F424122110313100D621E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,6 +118,17 @@
 				AF8EDFA1751EF1B0737FD0DE /* Pods-JiaoLuo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		986FA26B2112F89600C623BC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				986FA2702113004F00C623BC /* API.swift */,
+				986FA273211301F700C623BC /* Models.swift */,
+				986FA26E2112FDE500C623BC /* DataProcesser.swift */,
+				986FA2752113056E00C623BC /* LimitProcesser.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		98F423C12110187A00D621E1 = {
@@ -165,6 +184,7 @@
 		98F423FB21102FCE00D621E1 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				986FA26B2112F89600C623BC /* Service */,
 				98F424032110311600D621E1 /* Utils */,
 				98F423FE2110310900D621E1 /* ViewExtension */,
 				98F423CD2110187A00D621E1 /* AppDelegate.swift */,
@@ -186,9 +206,9 @@
 		98F424032110311600D621E1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				98F424042110311600D621E1 /* SwiftNotice.swift */,
+				986FA26C2112FBFC00C623BC /* ConfigInfo.swift */,
 				98F424052110311600D621E1 /* MLog.swift */,
-				98F424062110311600D621E1 /* MController.swift */,
+				98F424042110311600D621E1 /* SwiftNotice.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -388,22 +408,32 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JiaoLuo/Pods-JiaoLuo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CLImagePickerTool/CLImagePickerTool.framework",
 				"${BUILT_PRODUCTS_DIR}/EDHInputAccessoryView/EDHInputAccessoryView.framework",
 				"${BUILT_PRODUCTS_DIR}/EDHUtility/EDHUtility.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/FontAwesomeKit/FontAwesomeKit.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CLImagePickerTool.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EDHInputAccessoryView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EDHUtility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesomeKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -442,8 +472,12 @@
 				98F4241C2110313100D621E1 /* UserViewController.swift in Sources */,
 				98F424012110310900D621E1 /* UIColor+Extension.swift in Sources */,
 				98F424022110310900D621E1 /* UIView+Extension.swift in Sources */,
+				986FA2762113056E00C623BC /* LimitProcesser.swift in Sources */,
 				98C89F0421114ABE00F7CDC4 /* RichTextInputViewController.swift in Sources */,
-				98F424092110311700D621E1 /* MController.swift in Sources */,
+				986FA26D2112FBFC00C623BC /* ConfigInfo.swift in Sources */,
+				986FA2712113004F00C623BC /* API.swift in Sources */,
+				986FA26F2112FDE500C623BC /* DataProcesser.swift in Sources */,
+				986FA274211301F700C623BC /* Models.swift in Sources */,
 				98F424072110311700D621E1 /* SwiftNotice.swift in Sources */,
 				98F424082110311700D621E1 /* MLog.swift in Sources */,
 				98F424212110313100D621E1 /* FeedsViewController.swift in Sources */,

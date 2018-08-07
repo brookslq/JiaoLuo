@@ -1,9 +1,13 @@
 PODS:
+  - Alamofire (4.5.1)
   - CLImagePickerTool (2.1.4)
   - EDHInputAccessoryView (0.1.1):
     - EDHUtility (~> 0.1)
     - FontAwesomeKit (~> 2.1)
   - EDHUtility (0.1.2)
+  - FMDB (2.7.2):
+    - FMDB/standard (= 2.7.2)
+  - FMDB/standard (2.7.2)
   - FontAwesomeKit (2.2.1):
     - FontAwesomeKit/Core (= 2.2.1)
     - FontAwesomeKit/FontAwesome (= 2.2.1)
@@ -26,40 +30,61 @@ PODS:
   - FontAwesomeKit/Zocial (2.2.1):
     - FontAwesomeKit/Core
   - KeychainAccess (3.1.0)
+  - Moya (10.0.0):
+    - Moya/Core (= 10.0.0)
+  - Moya/Core (10.0.0):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - PKHUD (5.0.0)
+  - Result (3.2.4)
   - RxCocoa (4.0.0):
     - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
+  - Alamofire
   - CLImagePickerTool
   - EDHInputAccessoryView
+  - FMDB
   - KeychainAccess
+  - Moya (~> 10)
+  - PKHUD
   - RxCocoa
   - RxSwift
   - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - CLImagePickerTool
     - EDHInputAccessoryView
     - EDHUtility
+    - FMDB
     - FontAwesomeKit
     - KeychainAccess
+    - Moya
+    - PKHUD
+    - Result
     - RxCocoa
     - RxSwift
     - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   CLImagePickerTool: d8152a6bf7c780e6c558c3db52e5577acdefec0e
   EDHInputAccessoryView: 3e15385630d6dabb335c52981ffde957d192c8d0
   EDHUtility: 9e888c6880f52318e6f018374adb3d15c749f4a5
+  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   FontAwesomeKit: 3614979b3dbb0ec3f7fac1bd760b91f66c31db67
   KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
+  Moya: adb58b0f4e58430db43cc6e2f6ebab1836501186
+  PKHUD: 3c001512c6e002091184197a8de7a20420786e3b
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 4c58b95dd853dd33d0d5e5af261eff450a09c04d
+PODFILE CHECKSUM: 79f5267f3e2b1b07d36a32b2e12a30200f036f95
 
 COCOAPODS: 1.5.3
