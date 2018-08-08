@@ -131,6 +131,13 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		98ED9A8721197A880044FB74 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
 		98F423C12110187A00D621E1 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +191,7 @@
 		98F423FB21102FCE00D621E1 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				98ED9A8721197A880044FB74 /* DB */,
 				986FA26B2112F89600C623BC /* Service */,
 				98F424032110311600D621E1 /* Utils */,
 				98F423FE2110310900D621E1 /* ViewExtension */,
@@ -659,7 +667,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YJ343D46JX;
 				INFOPLIST_FILE = JiaoLuo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -680,7 +688,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YJ343D46JX;
 				INFOPLIST_FILE = JiaoLuo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

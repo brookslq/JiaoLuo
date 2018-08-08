@@ -45,7 +45,7 @@
                                     <action selector="photoButtonClickEvent:" destination="HZe-bN-x4N" eventType="touchUpInside" id="SSV-gO-eY8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3CL-5j-2cG">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3CL-5j-2cG">
                                 <rect key="frame" x="267.5" y="369" width="48" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="kuB-PG-J7f"/>
@@ -68,7 +68,7 @@
                                     <action selector="voiceButtonClickEvent:" destination="HZe-bN-x4N" eventType="touchUpInside" id="wVQ-n1-09X"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cya-FI-JxW">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cya-FI-JxW">
                                 <rect key="frame" x="163.5" y="369" width="48" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="7Ok-3g-Plo"/>
@@ -78,7 +78,7 @@
                                 <state key="selected" image="add_flags_sel"/>
                                 <state key="highlighted" image="add_flags_sel"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZO-TZ-ioa">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZO-TZ-ioa">
                                 <rect key="frame" x="59.5" y="369" width="48" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="J8s-bG-vWt"/>

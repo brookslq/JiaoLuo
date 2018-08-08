@@ -12,6 +12,6 @@ pod 'EDHInputAccessoryView'
 pod 'Alamofire'
 pod 'Moya', '~> 10'
 pod 'PKHUD'
-pod 'FMDB'
+pod 'RealmSwift'
 inhibit_all_warnings!
 end
