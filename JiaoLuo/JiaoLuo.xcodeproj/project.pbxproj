@@ -8,11 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		1F7BBDD0C5E12D27D62D7C3B /* Pods_JiaoLuo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3CFA49ECD5EA1B2A59BA2 /* Pods_JiaoLuo.framework */; };
+		9830894C211BCBCC006F619A /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9830894A211BCBCA006F619A /* Realm.framework */; };
+		9830894D211BCBCC006F619A /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9830894A211BCBCA006F619A /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9830894E211BCBCC006F619A /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9830894B211BCBCB006F619A /* RealmSwift.framework */; };
+		9830894F211BCBCC006F619A /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9830894B211BCBCB006F619A /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98308953211BD288006F619A /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98308952211BD288006F619A /* RealmManager.swift */; };
+		98308956211BEC24006F619A /* ContentModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98308955211BEC24006F619A /* ContentModels.swift */; };
+		98308958211C12D7006F619A /* HelperMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98308957211C12D7006F619A /* HelperMethod.swift */; };
+		98308961211C3AD9006F619A /* TextContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830895F211C3AD9006F619A /* TextContentTableViewCell.swift */; };
+		98308962211C3AD9006F619A /* TextContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98308960211C3AD9006F619A /* TextContentTableViewCell.xib */; };
+		98308964211D1491006F619A /* TextTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98308963211D1491006F619A /* TextTableView.swift */; };
 		986FA26D2112FBFC00C623BC /* ConfigInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FA26C2112FBFC00C623BC /* ConfigInfo.swift */; };
 		986FA26F2112FDE500C623BC /* DataProcesser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FA26E2112FDE500C623BC /* DataProcesser.swift */; };
 		986FA2712113004F00C623BC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FA2702113004F00C623BC /* API.swift */; };
 		986FA274211301F700C623BC /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FA273211301F700C623BC /* Models.swift */; };
 		986FA2762113056E00C623BC /* LimitProcesser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986FA2752113056E00C623BC /* LimitProcesser.swift */; };
+		98862F3E212A5A9100284961 /* TextShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98862F3C212A5A9100284961 /* TextShowViewController.swift */; };
+		98862F3F212A5A9100284961 /* TextShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98862F3D212A5A9100284961 /* TextShowViewController.xib */; };
+		98862F43212A677100284961 /* VoiceInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98862F42212A677100284961 /* VoiceInputViewController.swift */; };
 		98C89F0421114ABE00F7CDC4 /* RichTextInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C89F0321114ABE00F7CDC4 /* RichTextInputViewController.swift */; };
 		98F423CE2110187A00D621E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F423CD2110187A00D621E1 /* AppDelegate.swift */; };
 		98F423D52110187B00D621E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98F423D42110187B00D621E1 /* Assets.xcassets */; };
@@ -50,13 +63,39 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		98308950211BCBCC006F619A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9830894F211BCBCC006F619A /* RealmSwift.framework in Embed Frameworks */,
+				9830894D211BCBCC006F619A /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		55A25731AC9E674F062B83B2 /* Pods-JiaoLuo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiaoLuo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JiaoLuo/Pods-JiaoLuo.debug.xcconfig"; sourceTree = "<group>"; };
+		9830894A211BCBCA006F619A /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		9830894B211BCBCB006F619A /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		98308952211BD288006F619A /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		98308955211BEC24006F619A /* ContentModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModels.swift; sourceTree = "<group>"; };
+		98308957211C12D7006F619A /* HelperMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperMethod.swift; sourceTree = "<group>"; };
+		9830895F211C3AD9006F619A /* TextContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextContentTableViewCell.swift; sourceTree = "<group>"; };
+		98308960211C3AD9006F619A /* TextContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextContentTableViewCell.xib; sourceTree = "<group>"; };
+		98308963211D1491006F619A /* TextTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableView.swift; sourceTree = "<group>"; };
 		986FA26C2112FBFC00C623BC /* ConfigInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigInfo.swift; sourceTree = "<group>"; };
 		986FA26E2112FDE500C623BC /* DataProcesser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProcesser.swift; sourceTree = "<group>"; };
 		986FA2702113004F00C623BC /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		986FA273211301F700C623BC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		986FA2752113056E00C623BC /* LimitProcesser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitProcesser.swift; sourceTree = "<group>"; };
+		98862F3C212A5A9100284961 /* TextShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextShowViewController.swift; sourceTree = "<group>"; };
+		98862F3D212A5A9100284961 /* TextShowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextShowViewController.xib; sourceTree = "<group>"; };
+		98862F42212A677100284961 /* VoiceInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceInputViewController.swift; sourceTree = "<group>"; };
 		98C89F0321114ABE00F7CDC4 /* RichTextInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextInputViewController.swift; sourceTree = "<group>"; };
 		98F423CA2110187A00D621E1 /* JiaoLuo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiaoLuo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F423CD2110187A00D621E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +129,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9830894C211BCBCC006F619A /* Realm.framework in Frameworks */,
 				1F7BBDD0C5E12D27D62D7C3B /* Pods_JiaoLuo.framework in Frameworks */,
+				9830894E211BCBCC006F619A /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +161,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		98308954211BEBED006F619A /* DBModels */ = {
+			isa = PBXGroup;
+			children = (
+				98308955211BEC24006F619A /* ContentModels.swift */,
+			);
+			path = DBModels;
+			sourceTree = "<group>";
+		};
+		9830895A211C3A96006F619A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				98308963211D1491006F619A /* TextTableView.swift */,
+				9830895F211C3AD9006F619A /* TextContentTableViewCell.swift */,
+				98308960211C3AD9006F619A /* TextContentTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		986FA26B2112F89600C623BC /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,16 +190,38 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		98ED9A8721197A880044FB74 /* DB */ = {
+		98862F40212A5A9C00284961 /* SubVC */ = {
 			isa = PBXGroup;
 			children = (
+				98862F3C212A5A9100284961 /* TextShowViewController.swift */,
+				98862F3D212A5A9100284961 /* TextShowViewController.xib */,
 			);
-			path = DB;
+			path = SubVC;
+			sourceTree = "<group>";
+		};
+		98862F41212A674B00284961 /* SubVC */ = {
+			isa = PBXGroup;
+			children = (
+				98C89F0321114ABE00F7CDC4 /* RichTextInputViewController.swift */,
+				98862F42212A677100284961 /* VoiceInputViewController.swift */,
+			);
+			path = SubVC;
+			sourceTree = "<group>";
+		};
+		98ED9A8721197A880044FB74 /* RealmDB */ = {
+			isa = PBXGroup;
+			children = (
+				98308952211BD288006F619A /* RealmManager.swift */,
+				98308954211BEBED006F619A /* DBModels */,
+			);
+			path = RealmDB;
 			sourceTree = "<group>";
 		};
 		98F423C12110187A00D621E1 = {
 			isa = PBXGroup;
 			children = (
+				9830894A211BCBCA006F619A /* Realm.framework */,
+				9830894B211BCBCB006F619A /* RealmSwift.framework */,
 				98F423CC2110187A00D621E1 /* JiaoLuo */,
 				98F423E12110187C00D621E1 /* JiaoLuoTests */,
 				98F423EC2110187C00D621E1 /* JiaoLuoUITests */,
@@ -164,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				98F4240A2110313100D621E1 /* Controllers */,
+				98ED9A8721197A880044FB74 /* RealmDB */,
 				98F423FB21102FCE00D621E1 /* SupportFiles */,
 				98F423D92110187B00D621E1 /* Info.plist */,
 			);
@@ -191,7 +273,6 @@
 		98F423FB21102FCE00D621E1 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
-				98ED9A8721197A880044FB74 /* DB */,
 				986FA26B2112F89600C623BC /* Service */,
 				98F424032110311600D621E1 /* Utils */,
 				98F423FE2110310900D621E1 /* ViewExtension */,
@@ -217,6 +298,7 @@
 				986FA26C2112FBFC00C623BC /* ConfigInfo.swift */,
 				98F424052110311600D621E1 /* MLog.swift */,
 				98F424042110311600D621E1 /* SwiftNotice.swift */,
+				98308957211C12D7006F619A /* HelperMethod.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -255,6 +337,8 @@
 			children = (
 				98F424262110419100D621E1 /* Feeds.storyboard */,
 				98F424152110313100D621E1 /* FeedsViewController.swift */,
+				98862F40212A5A9C00284961 /* SubVC */,
+				9830895A211C3A96006F619A /* Views */,
 			);
 			path = FeedsVC;
 			sourceTree = "<group>";
@@ -264,7 +348,7 @@
 			children = (
 				98F4242A211041B900D621E1 /* Add.storyboard */,
 				98F424182110313100D621E1 /* AddViewController.swift */,
-				98C89F0321114ABE00F7CDC4 /* RichTextInputViewController.swift */,
+				98862F41212A674B00284961 /* SubVC */,
 			);
 			path = AddVC;
 			sourceTree = "<group>";
@@ -289,6 +373,8 @@
 				98F423C72110187A00D621E1 /* Frameworks */,
 				98F423C82110187A00D621E1 /* Resources */,
 				A039B18C7AEA8F6F72172F18 /* [CP] Embed Pods Frameworks */,
+				98308950211BCBCC006F619A /* Embed Frameworks */,
+				98308951211BD073006F619A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -383,9 +469,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98862F3F212A5A9100284961 /* TextShowViewController.xib in Resources */,
 				98F4241F2110313100D621E1 /* Main.storyboard in Resources */,
 				98F42429211041A900D621E1 /* User.storyboard in Resources */,
 				98F423D82110187B00D621E1 /* LaunchScreen.storyboard in Resources */,
+				98308962211C3AD9006F619A /* TextContentTableViewCell.xib in Resources */,
 				98F424272110419100D621E1 /* Feeds.storyboard in Resources */,
 				98F4242B211041B900D621E1 /* Add.storyboard in Resources */,
 				98F423D52110187B00D621E1 /* Assets.xcassets in Resources */,
@@ -409,6 +497,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		98308951211BD073006F619A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
 		A039B18C7AEA8F6F72172F18 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,7 +521,6 @@
 				"${BUILT_PRODUCTS_DIR}/CLImagePickerTool/CLImagePickerTool.framework",
 				"${BUILT_PRODUCTS_DIR}/EDHInputAccessoryView/EDHInputAccessoryView.framework",
 				"${BUILT_PRODUCTS_DIR}/EDHUtility/EDHUtility.framework",
-				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/FontAwesomeKit/FontAwesomeKit.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
@@ -436,7 +536,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CLImagePickerTool.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EDHInputAccessoryView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EDHUtility.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesomeKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
@@ -477,15 +576,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				98F424232110313100D621E1 /* AddViewController.swift in Sources */,
+				98308956211BEC24006F619A /* ContentModels.swift in Sources */,
 				98F4241C2110313100D621E1 /* UserViewController.swift in Sources */,
 				98F424012110310900D621E1 /* UIColor+Extension.swift in Sources */,
 				98F424022110310900D621E1 /* UIView+Extension.swift in Sources */,
 				986FA2762113056E00C623BC /* LimitProcesser.swift in Sources */,
+				98308964211D1491006F619A /* TextTableView.swift in Sources */,
+				98862F3E212A5A9100284961 /* TextShowViewController.swift in Sources */,
 				98C89F0421114ABE00F7CDC4 /* RichTextInputViewController.swift in Sources */,
+				98308961211C3AD9006F619A /* TextContentTableViewCell.swift in Sources */,
 				986FA26D2112FBFC00C623BC /* ConfigInfo.swift in Sources */,
 				986FA2712113004F00C623BC /* API.swift in Sources */,
 				986FA26F2112FDE500C623BC /* DataProcesser.swift in Sources */,
+				98308953211BD288006F619A /* RealmManager.swift in Sources */,
+				98862F43212A677100284961 /* VoiceInputViewController.swift in Sources */,
 				986FA274211301F700C623BC /* Models.swift in Sources */,
+				98308958211C12D7006F619A /* HelperMethod.swift in Sources */,
 				98F424072110311700D621E1 /* SwiftNotice.swift in Sources */,
 				98F424082110311700D621E1 /* MLog.swift in Sources */,
 				98F424212110313100D621E1 /* FeedsViewController.swift in Sources */,
@@ -666,6 +772,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YJ343D46JX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = JiaoLuo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -687,6 +797,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YJ343D46JX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = JiaoLuo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

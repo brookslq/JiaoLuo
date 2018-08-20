@@ -24,7 +24,7 @@ class LimitProcesser {
                 action in
                 let url = NSURL.init(string: UIApplicationOpenSettingsURLString)
                 if(UIApplication.shared.canOpenURL(url! as URL)) {
-                    UIApplication.shared.openURL(url! as URL)
+                    UIApplication.shared.open(url! as URL, options: ["":""], completionHandler: nil)
                 }
             }
         } else {

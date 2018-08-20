@@ -12,6 +12,10 @@ import SwiftyJSON
 import PKHUD
 
 class API {
+    
+    // MARK: - 单例实例
+    static var `default`: API = API()
+    
     //MARK: - 天气处理
     ///通过经纬度，获取当前天气状况数据
     func postCurrentWeatherData(_ longitude: String!, latitude: String!) {

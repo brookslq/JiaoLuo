@@ -20,6 +20,8 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pnv-kU-oSv">
                                 <rect key="frame" x="0.0" y="64" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="MeP-g7-9Yj"/>
                                 </constraints>
@@ -46,7 +48,7 @@
         <scene sceneID="Eav-NW-AFb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T0y-VL-7Ed" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="角落" image="tab_feeds_sel" selectedImage="tab_feeds_sel" id="InC-dd-gUt"/>
+                    <tabBarItem key="tabBarItem" title="角落" image="tab_feeds_nor" selectedImage="tab_feeds_sel" id="InC-dd-gUt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XGF-pO-VjH">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -63,6 +65,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="tab_feeds_nor" width="32" height="32"/>
         <image name="tab_feeds_sel" width="32" height="32"/>
     </resources>
 </document>

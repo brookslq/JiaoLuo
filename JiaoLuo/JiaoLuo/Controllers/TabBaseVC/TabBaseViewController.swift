@@ -9,7 +9,7 @@
 import UIKit
 
 class TabBaseViewController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initConfig()

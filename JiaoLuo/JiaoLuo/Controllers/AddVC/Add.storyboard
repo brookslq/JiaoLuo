@@ -29,7 +29,7 @@
                                 <state key="highlighted" image="add_text_sel"/>
                                 <connections>
                                     <action selector="textButtonClickEvent:" destination="HZe-bN-x4N" eventType="touchUpInside" id="Tte-Q6-1gb"/>
-                                    <segue destination="vyl-3H-4NA" kind="push" identifier="turn2Text" id="tiW-oO-nRx"/>
+                                    <segue destination="vyl-3H-4NA" kind="show" identifier="turn2Text" id="tiW-oO-nRx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ou-HX-2sh">
@@ -66,6 +66,7 @@
                                 <state key="highlighted" image="add_voice_sel"/>
                                 <connections>
                                     <action selector="voiceButtonClickEvent:" destination="HZe-bN-x4N" eventType="touchUpInside" id="wVQ-n1-09X"/>
+                                    <segue destination="Bec-74-hi4" kind="show" identifier="turn2Voice" id="elO-2c-zZr"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cya-FI-JxW">
@@ -179,15 +180,7 @@
                                 <rect key="frame" x="16" y="111" width="343" height="498"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="嗨，这算是一个彩蛋吧。正常情况，应该是看不到这段文字，想见就是有缘，祝你幸福快乐！">
-                                        <attributes>
-                                            <font key="NSFont" size="18" name=".PingFangSC-Regular"/>
-                                            <font key="NSOriginalFont" size="18" name=".AppleSystemUIFont"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="charWrapping" baseWritingDirection="natural" firstLineHeadIndent="36" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGV-vC-Pbk">
@@ -232,6 +225,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w3Y-bs-pNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1548" y="1005.2473763118442"/>
+        </scene>
+        <!--Voice Input View Controller-->
+        <scene sceneID="BBK-BE-EFA">
+            <objects>
+                <viewController id="Bec-74-hi4" customClass="VoiceInputViewController" customModule="JiaoLuo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vlm-VM-eer">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ndy-36-tqN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CYR-CF-iVM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1548" y="1776"/>
         </scene>
         <!--记录-->
         <scene sceneID="a7k-rj-SKM">

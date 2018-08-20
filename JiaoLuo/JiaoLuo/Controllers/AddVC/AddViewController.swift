@@ -14,10 +14,13 @@ protocol PageTurnDelegate: class {
 }
 
 class AddViewController: UIViewController {
-    
+    // sb 跳转代码控制
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "turn2Text" {
             (segue.destination as! RichTextInputViewController).turnPageDelegate = self
+        }
+        if segue.identifier == "turn2Voice" {
+            (segue.destination as! VoiceInputViewController).turnPageDelegate = self
         }
     }
     

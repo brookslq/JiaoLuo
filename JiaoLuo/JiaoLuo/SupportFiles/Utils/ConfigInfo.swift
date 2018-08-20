@@ -11,6 +11,12 @@ import RxCocoa
 import RxSwift
 
 class ConfigInfo {
+    // 数据库名称
+    static let JIAOLUO = "jiaoluo"
+    
+    // cell_id
+    static let CELL_ID = "CELL_ID"
+    
     // 彩云天气token
     static let WEATHER_TOKEN = "bWLuKCa0zi6CE62r"
     // 彩云天气API主url
@@ -22,4 +28,7 @@ class ConfigInfo {
     // 经纬度
     static var LONGITUDE = ""
     static var LAITUDE = ""
+    
+    // 默认文字，Add
+    static let ADD_TEXT: String = "这就用纯粹的文字，记录此刻！\n\n记忆会模糊，记录不会褪色。"
 }

@@ -12,11 +12,14 @@ import CoreLocation
 
 class DataProcesser {
     
+    // MARK: - 单例实例
+    static var `default`: DataProcesser = DataProcesser()
+    
     /************************************* 定位 *****************************************/
+    let locationManager: CLLocationManager = CLLocationManager()
     
     //MARK: - LOCATION
     func setLocation(_ target: UIViewController) {
-        let locationManager: CLLocationManager = CLLocationManager()
         //设置定位服务管理器代理
         locationManager.delegate = target as? CLLocationManagerDelegate
         //设置定位进度
@@ -42,8 +45,8 @@ class DataProcesser {
             ConfigInfo.LONGITUDE = longitude!
             ConfigInfo.LAITUDE = latitude!
             // 地理编码解析里面有个闭包
-            DataProcesser().reverseGeocode(latitude: Double(latitude!)!, longitude: Double(longitude!)!)
-            API().postCurrentWeatherData(ConfigInfo.LONGITUDE, latitude: ConfigInfo.LAITUDE)
+            DataProcesser.default.reverseGeocode(latitude: Double(latitude!)!, longitude: Double(longitude!)!)
+            API.default.postCurrentWeatherData(ConfigInfo.LONGITUDE, latitude: ConfigInfo.LAITUDE)
         }
     }
     
@@ -128,9 +131,6 @@ class DataProcesser {
 func getNowTime() -> String {
     // 获取当前时间
     let now = Date()
-    // 创建一个日期格式器
-    let dformatter = DateFormatter()
-    dformatter.dateFormat = "YYYY-MM-dd"
     // 返回当前时间
-    return dformatter.string(from: now)
+    return date2String(now)
 }
