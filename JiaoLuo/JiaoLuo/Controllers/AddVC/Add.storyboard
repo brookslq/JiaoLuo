@@ -42,7 +42,7 @@
                                 <state key="selected" image="add_photo_sel"/>
                                 <state key="highlighted" image="add_photo_sel"/>
                                 <connections>
-                                    <action selector="photoButtonClickEvent:" destination="HZe-bN-x4N" eventType="touchUpInside" id="SSV-gO-eY8"/>
+                                    <segue destination="RiZ-tN-XXa" kind="show" identifier="turn2Image" id="HSY-Dm-JiZ"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3CL-5j-2cG">
@@ -225,6 +225,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w3Y-bs-pNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1548" y="1005.2473763118442"/>
+        </scene>
+        <!--Image Input View Controller-->
+        <scene sceneID="DKM-8z-6dd">
+            <objects>
+                <viewController id="RiZ-tN-XXa" customClass="ImageInputViewController" customModule="JiaoLuo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bil-0G-z2O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nSp-lg-ksn">
+                                <rect key="frame" x="82" y="211" width="210" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="mK2-vg-AYQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="nSp-lg-ksn" id="Hz9-MQ-Eha"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DPH-LE-vXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1016.8" y="210.94452773613196"/>
         </scene>
         <!--Voice Input View Controller-->
         <scene sceneID="BBK-BE-EFA">

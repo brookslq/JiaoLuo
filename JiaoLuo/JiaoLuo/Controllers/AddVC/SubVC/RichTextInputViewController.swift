@@ -20,14 +20,14 @@ class RichTextInputViewController: UIViewController {
     @IBOutlet weak var saveButton: UIButton!
     var doneButton: UIBarButtonItem!
     
-    var realmDB: Realm!
+//    var realmDB: Realm!
     
     weak var turnPageDelegate: PageTurnDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initConfig()
-        realmDB = RealmManager.default.createDB(ConfigInfo.JIAOLUO, isReadOnly: false)
+//        realmDB = RealmManager.default.createDB(ConfigInfo.JIAOLUO, isReadOnly: false)
     }
     
     func initConfig() {

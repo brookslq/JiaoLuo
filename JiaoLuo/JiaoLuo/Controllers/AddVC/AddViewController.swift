@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CLImagePickerTool
 
 protocol PageTurnDelegate: class {
     func pageTurn2FeedsVC(_ target: UIViewController)
@@ -21,6 +20,9 @@ class AddViewController: UIViewController {
         }
         if segue.identifier == "turn2Voice" {
             (segue.destination as! VoiceInputViewController).turnPageDelegate = self
+        }
+        if segue.identifier == "turn2Image" {
+            (segue.destination as! ImageInputViewController).turnPageDelegate = self
         }
     }
     
@@ -51,17 +53,6 @@ class AddViewController: UIViewController {
     
     @IBAction func voiceButtonClickEvent(_ sender: UIButton) {
         mLog(message: "声音输入")
-    }
-    
-    @IBAction func photoButtonClickEvent(_ sender: UIButton) {
-        mLog(message: "照片")
-        let imagePicker = CLImagePickersTool()
-        imagePicker.singleImageChooseType = .singlePicture
-        imagePicker.isHiddenVideo = true
-        imagePicker.singleModelImageCanEditor = true
-        imagePicker.setupImagePickerWith(MaxImagesCount: 6, superVC: self) { (asset,cutImage) in
-            
-        }
     }
     
     @IBAction func dismissClickEvent(_ sender: UIButton) {

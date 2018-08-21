@@ -22,14 +22,12 @@ class FeedsViewController: UIViewController {
     var selectedTitleTag = 0    // 默认是首位
     
     var realmDB: Realm!
-    
     // 内容
     var scrollerV: UIScrollView!
     var lastContentOffset: CGFloat = 0
-    
-    
+
     var textTableView: TextTableView!
-    
+    var voiceTableView: VoiceTableView!
     // Rx
     let disposeBag = DisposeBag()
     
@@ -52,6 +50,12 @@ class FeedsViewController: UIViewController {
         // 对结果根据 属性 进行了降序排列
         textTableView.textModels = realmDB.objects(TextContentModel.self).sorted(byKeyPath: "originTime", ascending: false)
         textTableView.reloadData()
+        
+        guard voiceTableView != nil else {
+            return
+        }
+        voiceTableView.voiceModels = realmDB.objects(VoiceContentModel.self).sorted(byKeyPath: "originTime", ascending: false)
+        voiceTableView.reloadData()
     }
     
     func initConfig() {
@@ -77,6 +81,9 @@ class FeedsViewController: UIViewController {
         textTableView = TextTableView(frame: CGRect(x: 0, y: 0, width: view.width, height: scrollerV.height), style: .plain)
         textTableView.textTVDelegate = self
         scrollerV.addSubview(textTableView)
+        
+        voiceTableView = VoiceTableView(frame: CGRect(x: view.width, y: 0, width: view.width, height: scrollerV.height), style: .plain)
+        scrollerV.addSubview(voiceTableView)
     }
     
     /// 设置标签栏
