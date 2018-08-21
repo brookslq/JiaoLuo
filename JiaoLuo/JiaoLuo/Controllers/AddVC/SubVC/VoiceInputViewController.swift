@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class VoiceInputViewController: UIViewController {
 
@@ -15,8 +16,20 @@ class VoiceInputViewController: UIViewController {
     @IBOutlet weak var voiceButton: UIButton!
     weak var turnPageDelegate: PageTurnDelegate!
     
+    // 时间记录
+    @IBOutlet weak var timeLabel: UILabel!
+    var timer: Timer!
+    var countTime: Float = 0.00
+    // 声音动画
+    @IBOutlet weak var musicLayerView: UIView!
     let baseLayer = CALayer()
     var animation: CAKeyframeAnimation!
+    // 录音
+    var recorder: AVAudioRecorder?  // 录音器
+    var player: AVAudioPlayer?      // 播放器
+    var recorderSeetingDic: [String: Any]?  // 录音器设置参数数组
+    var volumeTimer: Timer!         // 定时器线程，循环检测录音的音量大小
+    var aacPath: String?            // 录音存储路径
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,20 +52,50 @@ class VoiceInputViewController: UIViewController {
     
     @IBAction func voiceButtonClickEvent(_ sender: UIButton) {
         if sender.isSelected {
+            // 时间停止
+            timer.invalidate()
             baseLayer.removeAllAnimations()
+            buttonIsHidden(true)
         } else {
             musicAnimation()
             baseLayer.add(animation, forKey: nil)
+            buttonIsHidden(false)
+            
+            // 时间同步改变
+            timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
         }
         
         sender.isSelected = !sender.isSelected
     }
   
+    /// 设置两个功能按钮是否隐藏
+    func buttonIsHidden(_ isHidden: Bool) {
+        saveButton.isHidden = isHidden
+        deleteButton.isHidden = isHidden
+    }
+    
     @IBAction func saveButtonClickEvent(_ sender: UIButton) {
+        resetTimeAndAnimation()
     }
     
     
     @IBAction func deleteButtonClickEvent(_ sender: UIButton) {
+        resetTimeAndAnimation()
+    }
+    
+    // MARK: - 时间改变
+    //count time
+    @objc func updateTime() {
+        countTime += 0.01
+        timeLabel.text = String(format: "%.2f",countTime)
+    }
+    
+    func resetTimeAndAnimation() {
+        baseLayer.removeAllAnimations()
+        timer.invalidate()
+        countTime = 0.00
+        timeLabel.text = "0.00"
+        buttonIsHidden(true)
     }
 }
 
@@ -61,16 +104,16 @@ extension VoiceInputViewController {
     func musicAnimation() {
         // 背景layer
         let musicLayer = CALayer()
-        musicLayer.frame = CGRect(x: (view.width - 240) / 2, y: 120, width: 260, height: 320)
+        musicLayer.frame = CGRect(x: 0, y: 0, width: musicLayerView.width, height: musicLayerView.height)
         musicLayer.backgroundColor = UIColor.white.cgColor
-        self.view.layer.addSublayer(musicLayer)
+        musicLayerView.layer.addSublayer(musicLayer)
 
         // 创建baselayer
-        baseLayer.frame = CGRect(x: 0, y: 0, width: 10, height: 100)
+        baseLayer.frame = CGRect(x: 0, y: 0, width: 10, height: musicLayerView.height)
         baseLayer.cornerRadius = 2
         baseLayer.backgroundColor = UIColor.black.cgColor
         baseLayer.anchorPoint = CGPoint(x: 0, y: 1)
-        baseLayer.position = CGPoint(x: 10, y: musicLayer.bounds.width)
+        baseLayer.position = CGPoint(x: 10, y: musicLayerView.height)
         
         //创建复制layer
         let replicatorLayer = CAReplicatorLayer()

@@ -235,59 +235,97 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEI-3j-Qay">
-                                <rect key="frame" x="171.5" y="527" width="32" height="46"/>
+                                <rect key="frame" x="171.5" y="534" width="32" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="32" id="Cif-eR-x9Y"/>
                                     <constraint firstAttribute="height" constant="46" id="bWU-CK-mlH"/>
                                 </constraints>
                                 <state key="normal" image="voice_start"/>
+                                <state key="highlighted" image="voice_start_h"/>
                                 <connections>
                                     <action selector="voiceButtonClickEvent:" destination="Bec-74-hi4" eventType="touchUpInside" id="TTD-2j-4Rq"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgV-MC-ZQ0">
-                                <rect key="frame" x="80" y="541" width="32" height="32"/>
+                                <rect key="frame" x="80" y="548" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="TmW-aN-3yP"/>
                                     <constraint firstAttribute="width" constant="32" id="vBy-zK-WwV"/>
                                 </constraints>
                                 <state key="normal" image="voice_delete"/>
+                                <state key="highlighted" image="voice_delete_h"/>
                                 <connections>
                                     <action selector="deleteButtonClickEvent:" destination="Bec-74-hi4" eventType="touchUpInside" id="D4E-wn-OAH"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abs-0J-bLx">
-                                <rect key="frame" x="263.5" y="541" width="32" height="32"/>
+                                <rect key="frame" x="263.5" y="548" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="2aR-d8-to8"/>
                                     <constraint firstAttribute="width" constant="32" id="thQ-Lg-IIc"/>
                                 </constraints>
                                 <state key="normal" image="voice_save"/>
+                                <state key="highlighted" image="voice_save_h"/>
                                 <connections>
                                     <action selector="saveButtonClickEvent:" destination="Bec-74-hi4" eventType="touchUpInside" id="bdZ-Xz-bBK"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJc-Vj-xcp">
+                                <rect key="frame" x="67" y="136" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="SF4-Kc-MJL"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7e-zw-8Is">
+                                <rect key="frame" x="14" y="306" width="347" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="jhc-tF-RsC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="72"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="此刻，用声音记录。回响，用心去倾听。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctq-Bu-sTd">
+                                <rect key="frame" x="40.5" y="458" width="294" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="wd4-nk-w27"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="X7e-zw-8Is" firstAttribute="leading" secondItem="ndy-36-tqN" secondAttribute="leading" constant="14" id="41s-Gp-Nrk"/>
+                            <constraint firstItem="X7e-zw-8Is" firstAttribute="top" secondItem="JJc-Vj-xcp" secondAttribute="bottom" constant="42" id="7LK-WF-gVp"/>
+                            <constraint firstItem="JJc-Vj-xcp" firstAttribute="top" secondItem="ndy-36-tqN" secondAttribute="top" constant="72" id="DH7-CF-hAh"/>
+                            <constraint firstItem="CEI-3j-Qay" firstAttribute="top" secondItem="ctq-Bu-sTd" secondAttribute="bottom" constant="56" id="Fxx-Nh-QK2"/>
                             <constraint firstItem="CEI-3j-Qay" firstAttribute="leading" secondItem="bgV-MC-ZQ0" secondAttribute="trailing" constant="60" id="JgO-Of-HVI"/>
                             <constraint firstItem="Abs-0J-bLx" firstAttribute="leading" secondItem="CEI-3j-Qay" secondAttribute="trailing" constant="60" id="O6N-Le-yaa"/>
+                            <constraint firstItem="ctq-Bu-sTd" firstAttribute="centerX" secondItem="ndy-36-tqN" secondAttribute="centerX" id="Pjt-m3-Hch"/>
+                            <constraint firstItem="ndy-36-tqN" firstAttribute="trailing" secondItem="X7e-zw-8Is" secondAttribute="trailing" constant="14" id="g5V-Ug-T1O"/>
                             <constraint firstItem="bgV-MC-ZQ0" firstAttribute="bottom" secondItem="CEI-3j-Qay" secondAttribute="bottom" id="hk6-fm-zuj"/>
                             <constraint firstItem="Abs-0J-bLx" firstAttribute="bottom" secondItem="CEI-3j-Qay" secondAttribute="bottom" id="jmb-q6-dwR"/>
-                            <constraint firstItem="ndy-36-tqN" firstAttribute="bottom" secondItem="CEI-3j-Qay" secondAttribute="bottom" constant="94" id="p7V-Xs-dPa"/>
+                            <constraint firstItem="ctq-Bu-sTd" firstAttribute="top" secondItem="X7e-zw-8Is" secondAttribute="bottom" constant="8" id="k5J-vX-pNR"/>
+                            <constraint firstItem="ndy-36-tqN" firstAttribute="trailing" secondItem="JJc-Vj-xcp" secondAttribute="trailing" constant="68" id="kRV-gK-4BU"/>
                             <constraint firstItem="CEI-3j-Qay" firstAttribute="centerX" secondItem="ndy-36-tqN" secondAttribute="centerX" id="r63-m9-ubL"/>
+                            <constraint firstItem="JJc-Vj-xcp" firstAttribute="leading" secondItem="ndy-36-tqN" secondAttribute="leading" constant="67" id="vEO-gN-zes"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ndy-36-tqN"/>
                     </view>
                     <connections>
                         <outlet property="deleteButton" destination="bgV-MC-ZQ0" id="mna-Mi-TxQ"/>
+                        <outlet property="musicLayerView" destination="JJc-Vj-xcp" id="l2d-77-iq8"/>
                         <outlet property="saveButton" destination="Abs-0J-bLx" id="Jy2-mn-4GC"/>
+                        <outlet property="timeLabel" destination="X7e-zw-8Is" id="I03-fg-9dG"/>
                         <outlet property="voiceButton" destination="CEI-3j-Qay" id="xSs-Ld-hEv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CYR-CF-iVM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1548" y="1776"/>
+            <point key="canvasLocation" x="1548" y="1775.2623688155923"/>
         </scene>
         <!--记录-->
         <scene sceneID="a7k-rj-SKM">
@@ -327,7 +365,10 @@
         <image name="tab_add_nor" width="32" height="32"/>
         <image name="tab_add_sel" width="32" height="32"/>
         <image name="voice_delete" width="32" height="32"/>
+        <image name="voice_delete_h" width="32" height="32"/>
         <image name="voice_save" width="32" height="32"/>
+        <image name="voice_save_h" width="32" height="32"/>
         <image name="voice_start" width="31" height="45"/>
+        <image name="voice_start_h" width="31" height="45"/>
     </resources>
 </document>

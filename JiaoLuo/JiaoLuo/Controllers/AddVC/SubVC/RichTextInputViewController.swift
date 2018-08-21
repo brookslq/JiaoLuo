@@ -82,11 +82,12 @@ class RichTextInputViewController: UIViewController {
 
     @IBAction func saveButtonClick(_ sender: UIButton) {
         
-        guard descriptionInfoLabel.text != ConfigInfo.ADD_TEXT else {
+        guard contentTextView.text != ConfigInfo.ADD_TEXT else {
+            noticeTop("开始你的记录", autoClear: true, autoClearTime: 1)
             return
         }
         
-        guard descriptionInfoLabel.text?.count != 0 else {
+        guard contentTextView.text?.count != 0 else {
             return
         }
         // 创建模型，并赋值，添加进数据库
